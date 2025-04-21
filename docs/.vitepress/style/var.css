@@ -1,0 +1,79 @@
+:root{
+    --top-nav: 60px;
+    --top-bar: 60px;
+    --side-bar: 480px;
+    --code-content: 900px;
+    --margin-left: 100px
+}
+:root{
+    --main-color: #cc163a;
+    --font-color: #fff;
+    --shadow-color: rgba(204, 22, 59, 0.4);
+    --code-back-color: #2b2d30;
+    --code-bg-color: #87000c;
+    --code-color: #fff;
+    --code-block-bg-color: #1e1f22;
+    --code-lang-color: #a64fbc;
+    --code-copy-color: #930722;
+    --h2-border-color: #fff;
+    --custom-block-info-bg: rgb(0, 201, 168);
+    --custom-block-tip-bg: rgba(44, 115, 209);
+    --custom-block-warning-bg: rgba(255, 150, 112);
+    --custom-block-danger-bg: rgba(194, 75, 54);
+    --custom-block-details-bg: rgba(214, 92, 178);
+}
+:root{
+    --code-copy-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='rgba(204, 22, 59,1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3C/svg%3E");
+}
+/*custom-block*/
+:root {
+    --vp-custom-block-font-size: 14px;
+    --vp-custom-block-code-font-size: 13px;
+
+    --vp-custom-block-info-border: transparent;
+    --vp-custom-block-info-text: var(--vp-c-text-1);
+    --vp-custom-block-info-bg: var(--vp-c-default-soft);
+    --vp-custom-block-info-code-bg: var(--vp-c-default-soft);
+
+    --vp-custom-block-note-border: transparent;
+    --vp-custom-block-note-text: var(--vp-c-text-1);
+    --vp-custom-block-note-bg: var(--vp-c-default-soft);
+    --vp-custom-block-note-code-bg: var(--vp-c-default-soft);
+
+    --vp-custom-block-tip-border: transparent;
+    --vp-custom-block-tip-text: var(--vp-c-text-1);
+    --vp-custom-block-tip-bg: var(--vp-c-tip-soft);
+    --vp-custom-block-tip-code-bg: var(--vp-c-tip-soft);
+
+    --vp-custom-block-important-border: transparent;
+    --vp-custom-block-important-text: var(--vp-c-text-1);
+    --vp-custom-block-important-bg: var(--vp-c-important-soft);
+    --vp-custom-block-important-code-bg: var(--vp-c-important-soft);
+
+    --vp-custom-block-warning-border: transparent;
+    --vp-custom-block-warning-text: var(--vp-c-text-1);
+    --vp-custom-block-warning-bg: var(--vp-c-warning-soft);
+    --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
+
+    --vp-custom-block-danger-border: transparent;
+    --vp-custom-block-danger-text: var(--vp-c-text-1);
+    --vp-custom-block-danger-bg: var(--vp-c-danger-soft);
+    --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
+
+    --vp-custom-block-caution-border: transparent;
+    --vp-custom-block-caution-text: var(--vp-c-text-1);
+    --vp-custom-block-caution-bg: var(--vp-c-caution-soft);
+    --vp-custom-block-caution-code-bg: var(--vp-c-caution-soft);
+
+    --vp-custom-block-details-border: var(--vp-custom-block-info-border);
+    --vp-custom-block-details-text: var(--vp-custom-block-info-text);
+    --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
+    --vp-custom-block-details-code-bg: var(--vp-custom-block-info-code-bg);
+}
+:root {
+    --vp-font-family-base: 'Inter', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --vp-font-family-mono: ui-monospace, 'Menlo', 'Monaco', 'Consolas',
+    'Liberation Mono', 'Courier New', monospace;
+    font-optical-sizing: auto;
+}

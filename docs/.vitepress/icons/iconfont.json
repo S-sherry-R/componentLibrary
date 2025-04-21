@@ -1,0 +1,23 @@
+{
+  "id": "4886697",
+  "name": "我的组件库",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2342531",
+      "name": "cube1",
+      "font_class": "cube1",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "10304004",
+      "name": "cube2",
+      "font_class": "cube2",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    }
+  ]
+}

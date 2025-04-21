@@ -1,0 +1,32 @@
+
+html {
+  font-family: Arial, Helvetica;
+}
+/*滚动条样式*/
+::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+  border-radius: 6px;
+}
+@font-face {
+  font-family: mainTitle;
+  src: url("../fonts/font2.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: tagline;
+  src: url("../fonts/font1.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: menuTitle;
+  src: url("../fonts/font3.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
