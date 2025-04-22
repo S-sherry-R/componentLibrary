@@ -298,7 +298,7 @@ watch(
             type: 'scatter',
             z: 4,
             coordinateSystem: 'geo',
-            symbol: 'image://img/cdz.svg',
+            symbol: 'image://cdz.svg',
             symbolSize: 50,
             emphasis: {
               itemStyle:{
@@ -337,7 +337,7 @@ watch(
             type: 'scatter',
             z: 4,
             coordinateSystem: 'geo',
-            symbol: 'image://img/qy.svg',
+            symbol: 'image://qy.svg',
             symbolSize: 50,
             emphasis: {
               itemStyle:{

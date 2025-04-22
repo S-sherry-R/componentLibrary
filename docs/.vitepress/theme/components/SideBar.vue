@@ -3,7 +3,7 @@ import {menu,colors} from "../../menuConfig";
 import useMenuStore from "../../store/modules/menu";
 const menuStore = useMenuStore()
 const getImageUrl = (name:string) => {
-  return new URL(`../../img/${name}`, import.meta.url).href
+  return `/${name}`
 }
 const aClick = (item)=>{
   if(menuStore.name !== item.name){
