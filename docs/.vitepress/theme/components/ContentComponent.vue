@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" xmlns="">
 import {menu} from "../../menuConfig";
 import useMenuStore from "../../store/modules/menu";
 import {computed} from "vue";
@@ -9,7 +9,6 @@ const menuIndex = computed(()=>{
       return i
     }
   }
-  console.log(menu[menuStore.type][menuIndex].component)
   return -1
 })
 </script>

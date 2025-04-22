@@ -2,7 +2,9 @@
  * 屏幕适配
  */
 import { ref } from 'vue'
-
+import {windowWidth,windowHeight,devicePixelRatio} from "./windowConfig";
+const WIDTH = windowWidth()
+const HEIGHT = windowHeight()
 export default function useDraw() {
   // * 指向最外层容器
   const appRef = ref()
@@ -21,17 +23,17 @@ export default function useDraw() {
   const baseProportion = parseFloat((baseWidth / baseHeight).toFixed(5))
   const calcRate = () => {
     // 当前宽高比
-    const currentRate = parseFloat((window.innerWidth / window.innerHeight).toFixed(5))
+    const currentRate = parseFloat((WIDTH / HEIGHT).toFixed(5))
     if (appRef.value) {
       if (currentRate > baseProportion) {
         // 表示更宽
-        scale.width = ((window.innerHeight * baseProportion) / baseWidth).toFixed(5)
-        scale.height = (window.innerHeight / baseHeight).toFixed(5)
+        scale.width = ((HEIGHT * baseProportion) / baseWidth).toFixed(5)
+        scale.height = (HEIGHT / baseHeight).toFixed(5)
         appRef.value.style.transform = `scale(${scale.width}, ${scale.height}) translate(-50%, -50%)`
       } else {
         // 表示更高
-        scale.height = ((window.innerWidth / baseProportion) / baseHeight).toFixed(5)
-        scale.width = (window.innerWidth / baseWidth).toFixed(5)
+        scale.height = ((WIDTH / baseProportion) / baseHeight).toFixed(5)
+        scale.width = (WIDTH / baseWidth).toFixed(5)
         appRef.value.style.transform = `scale(${scale.width}, ${scale.height}) translate(-50%, -50%)`
       }
     }

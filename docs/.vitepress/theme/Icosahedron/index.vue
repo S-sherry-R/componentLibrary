@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import * as THREE from 'three'
 import {onMounted, ref} from "vue";
-import {ArcballControls} from "three/examples/jsm/controls/ArcballControls";
+import { ArcballControls } from 'three/addons/controls/ArcballControls.js'
+import {windowWidth,windowHeight,devicePixelRatio} from "../../utils/windowConfig";
+const WIDTH = windowWidth()
+const HEIGHT = windowHeight()
+const RATIO = devicePixelRatio()
 let renderer, scene, camera, composer, circle, skelet, particle;
 const container = ref()
 onMounted(() => {
@@ -12,12 +16,12 @@ onMounted(() => {
 const init = () => {
   //渲染器  antialias - 是否执行抗锯齿
   renderer = new THREE.WebGLRenderer({antialias: true, canvas: container.value, alpha: true});
-  renderer.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio((RATIO) ? RATIO : 1);
+  renderer.setSize(WIDTH, HEIGHT);
   renderer.autoClear = false;
   renderer.setClearColor(0x000000, 0.0);
   scene = new THREE.Scene();
-  camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+  camera = new THREE.PerspectiveCamera(75, WIDTH / HEIGHT, 1, 1000);
   camera.position.z = 400;
   scene.add(camera);
 
@@ -90,9 +94,9 @@ const init = () => {
 };
 
 const onWindowResize = () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = WIDTH / HEIGHT;
   camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(WIDTH, HEIGHT);
 }
 
 const animate = () => {

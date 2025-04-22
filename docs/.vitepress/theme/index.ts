@@ -9,7 +9,10 @@ import '../style/code.css'
 import '../style/code-group.css'
 import '../style/code-doc.css'
 import '../icons/iconfont.css'
-import '../icons/iconfont.js'
+if(typeof window !== "undefined"){
+  // @ts-ignore
+  import('../icons/iconfont.js')
+}
 // @ts-ignore
 import Layout from './Layout.vue'
 import pinia from "../store";

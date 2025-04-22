@@ -2,7 +2,9 @@
 import * as THREE from 'three'
 import gsap from 'gsap'
 import {onMounted, ref} from "vue";
-
+import {windowWidth,windowHeight,devicePixelRatio} from "../../utils/windowConfig";
+const WIDTH = windowWidth()
+const HEIGHT = windowHeight()
 const container = ref()
 let scene, camera, renderer
 const time = [];
@@ -88,16 +90,16 @@ onMounted(() => {
   init()
 })
 const windowResize = () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = WIDTH / HEIGHT;
   camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(WIDTH, HEIGHT);
 }
 const init = () => {
   scene = new THREE.Scene();
-  const aspect = window.innerWidth / window.innerHeight;
+  const aspect = WIDTH / HEIGHT;
   camera = new THREE.PerspectiveCamera(20, aspect, 0.1, 1000);
   renderer = new THREE.WebGLRenderer({antialias: true, canvas: container.value});
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(WIDTH, HEIGHT);
   camera.position.z = 70;
   camera.position.y = -5;
   camera.position.x = -15;

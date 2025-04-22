@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 !/.gitignore
 docs/.vitepress/cache
+docs/.vitepress/dist
